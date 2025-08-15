@@ -538,204 +538,71 @@ footer p {
     .images-container {
         grid-template-columns: 1fr;
     }
-/* --- Estilos generales --- */
-body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    margin: 0.5em 0;
-}
-
-.header {
-    text-align: center;
-    padding: 20px;
-    background: #f2f2f2;
-}
-
-.header img {
-    max-width: 200px;
-    height: auto;
-}
-
-.container, .container-quienesomos, .container-clientes {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px 0;
-}
-
-.images-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.image-box {
-    flex: 1 1 250px;
-    max-width: 300px;
-    overflow: hidden;
-}
-
-.image-box img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.text-content {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.text-content p {
-    margin: 10px 0;
-}
-
-.contact-btn {
-    display: inline-block;
-    margin: 10px 10px 0 0;
-    padding: 10px 20px;
-    background: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.quienesomos-section {
-    text-align: center;
-}
-
-.image-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
-}
-
-.sobremi-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.sobremi-content img {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.sobremi-text {
-    flex: 1;
-    min-width: 250px;
-}
-
-.container-clientes div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.container-clientes img {
-    max-width: 150px;
-    width: 100%;
-    height: auto;
-}
-
-.contacto-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.redes-sociales, .mas-info, .mapa {
-    flex: 1;
-    min-width: 250px;
-}
-
-.social-icons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.social-link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: #333;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background: #f2f2f2;
-}
-
-/* --- Media Queries para responsive --- */
+/* Tablets */
 @media (max-width: 1024px) {
-    .sobremi-content {
+    .container, .container-quienesomos, .container-trabajos {
         flex-direction: column;
+        padding: 20px;
+    }
+    .text-content {
+        padding: 20px 0;
         text-align: center;
     }
-    .image-row {
-        flex-direction: column;
+    .images-container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 0;
     }
 }
 
+/* Móviles */
 @media (max-width: 768px) {
     .images-container {
+        grid-template-columns: 1fr;
+    }
+    .sobremi-content {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
-
+    .sobremi img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
     .text-content h2 {
-        font-size: 1.5em;
+        font-size: 1.8rem;
     }
-
+    .text-content p {
+        font-size: 1rem;
+    }
     .contact-btn {
         width: 80%;
         margin: 10px 0;
     }
-
-    .container-clientes img {
-        max-width: 100px;
+    .logo-main {
+        font-size: 2.5rem;
+    }
+    .logo-sub {
+        font-size: 1rem;
+        letter-spacing: 2px;
     }
 }
 
+/* Móviles pequeños */
 @media (max-width: 480px) {
-    .header h1 {
-        font-size: 1.2em;
+    .piu, .marque {
+        width: 200px;
+        height: 150px;
     }
-
-    .text-content p {
-        font-size: 0.9em;
+    .contacto-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
-
-    .sobremi-text p {
-        font-size: 0.9em;
+    .mapa {
+        height: 200px;
     }
-
-    .social-link h4 {
-        font-size: 0.8em;
-    }
-
-    .social-link span {
-        font-size: 0.8em;
+    .footer {
+        font-size: 0.8rem;
     }
 }
-}
-
-
-
