@@ -252,8 +252,8 @@ p {
 }
 
 .sobremi img {
-    width: 350px; 
-    height: 350px;
+    width: 200px; 
+    height: 200px;
     border-radius: 10%;
     object-fit: cover;
     flex-shrink: 0; 
@@ -538,4 +538,5 @@ footer p {
     .images-container {
         grid-template-columns: 1fr;
     }
+
 }
