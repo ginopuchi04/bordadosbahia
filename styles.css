@@ -538,3 +538,53 @@ footer p {
     .images-container {
         grid-template-columns: 1fr;
     }
+    .container-quienesomos {
+  padding: 20px;
+  text-align: center;
+}
+
+.quienesomos-section h2,
+.quienesomos-section h3 {
+  margin-bottom: 15px;
+}
+
+.quienesomos-section p {
+  max-width: 600px;
+  margin: 0 auto 10px auto;
+  line-height: 1.5;
+}
+
+.image-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.image-row img {
+  max-width: 200px;
+  height: auto;
+}
+
+.arrow {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* 🔽 Responsivo para celulares */
+@media (max-width: 768px) {
+  .image-row {
+    flex-direction: column;
+  }
+
+  .arrow {
+    transform: rotate(90deg); /* flecha hacia abajo */
+    margin: 10px 0;
+  }
+
+  .image-row img {
+    max-width: 80%;
+  }
+}
+
